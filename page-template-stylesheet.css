@@ -1,0 +1,465 @@
+@charset "UTF-8";
+
+body{
+    font-family: "sans-serif";
+    font-size: 100%;
+    background: white;
+    color: black;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin-left: 1%;
+}
+
+h3{
+    margin-left: 1%;
+}
+
+h4{
+    margin-left: 1%;
+}
+
+/*My table styling fulfills requirement number 1*/
+table{
+    margin-left: 1%;
+    border: #bf5700 solid 1px;
+    padding: 1em;
+    background: #fffef0;
+}
+
+table tr th{
+    border: #BF5700 solid 1px;
+    text-align: center;
+    color: white;
+    background: rgba(191, 87, 0, 0.81);
+}
+
+table tr td{
+    
+}
+
+header{
+    height: auto;
+    margin: 0 0 2em 0;
+    border: none;
+    padding: 0.5em;
+    background: #BF5700;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    margin: .85em;
+    margin-left: .8em;
+    padding: 0 0 0 1.7em;
+    page-break-before: avoid;
+}
+
+form{
+    margin-left: 1%;
+    width: 35em;
+}
+
+/*form label and form input fulfills my requirement 2*/
+form label{
+    display: inline-block;
+    clear: left;
+    width: 19em;
+    text-align: left;
+    float: left;
+}
+
+form input {
+    display: inline-block;
+    float: right;
+}
+
+form textarea{
+    width: 25em;
+    height: 10em;
+    resize: none;
+}
+
+button{
+    margin-left: 1%;
+}
+
+select{
+    margin-left: 7.69em;
+    width: 12.95em;
+}
+
+#welcomePageBody {
+    margin-left: 16em;
+    margin-bottom: 5%;
+}
+
+#welcomePageBody img{
+    margin-left: 0;
+    position: fixed;
+    left: .5em;
+    top: 8em;
+    margin-right: 73%;
+    width: 15em;
+}
+
+/*the siteFooter tag, and all of its specifications fulfills requirement 3*/
+#siteFooter{
+    margin: 2em 0 1em 0;
+    border: none;
+    padding: 0.5em;
+    background: #BF5700;
+    color: white;
+}
+
+#siteFooter ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#siteFooter li{
+    display: inline-block;
+    margin: 0;
+    list-style-type: none;
+}
+
+#siteFooter li:before {
+    content: " ｜ ";
+}
+
+#siteFooter li:first-child:before {
+    content: normal;
+}
+
+#listingForm{
+    margin: 1%;
+    width: inherit;
+    margin-bottom: 12em;
+}
+
+#paymentFrom{
+    margin-left: 1%;
+    margin-bottom: 5%;
+}
+
+#paymentFrom label{
+    width: 22em;
+}
+
+/*
+body { font-family: "Arial"; font-size:100%; background: white; color: black; text-align: left; margin: 0; padding: 0; }
+
+!* Heading elements *!
+
+h1 { font-family: sans-serif; font-size: 2em; line-height: 1.0em; margin: .67em 0 .33em; font-weight: bolder; page-break-after: avoid; page-break-inside: avoid; }
+h2 { font-family: sans-serif; font-size: 1.5em; line-height: 1.0em; margin: .75em 0 .37em; font-weight: bolder; page-break-after: avoid; page-break-inside: avoid; }
+h3 { font-family: sans-serif; font-size: 1.17em; line-height: 1.05em; margin: .83em 0 .41em; font-weight: bolder; page-break-after: avoid; page-break-inside: avoid; }
+h4 { font-family: sans-serif; font-size: 1.0em; line-height: 1.05em; margin: 1.12em 0 .56em; font-weight: bolder; page-break-after: avoid; page-break-inside: avoid; }
+h5 { font-family: sans-serif; font-size: .83em; line-height: 1.05em; margin: 1.5em 0 .75em; font-weight: bolder; page-break-after: avoid; page-break-inside: avoid; }
+h6 { font-family: sans-serif; font-size: .75em; line-height: 1.05em; margin: 1.67em 0 .83em; font-weight: bolder; page-break-after: avoid; page-break-inside: avoid; }
+
+!* List elements *!
+
+ul { list-style: disc outside; margin: .85em 0; margin-left: .8em; padding: 0 0 0 1.7em; page-break-before: avoid; }
+ol { list-style: decimal outside; margin: .85em 0; margin-left: .8em; padding: 0 0 0 1.7em; page-break-before: avoid; }
+li { margin: .2em 0; padding: 0 }
+ol ul, ul ol, ul ul, ol ol { margin-top: 0; margin-bottom: 0 }
+dl { margin: .85em 0; padding: 0; page-break-before: avoid; }
+dt { margin: 0; padding: 0 }
+dd { margin: 0; margin-left: 2.5em; padding: 0 }
+
+!* Block elements *!
+
+p { margin: .85em 0; padding: 0; line-height: 1.23em }
+div { margin: 0; padding: 0; line-height: 1.23em }
+
+pre { margin: .85em 0; padding: 0; line-height: 1em; font-family: monospace; white-space: pre; page-break-inside: avoid; }
+blockquote { margin: .85em 2.5em; padding: 0; line-height: 1.1em; page-break-inside: avoid; }
+address { margin: .85em 0; padding: 0; line-height: 1.1em; font-style: italic }
+
+hr { border: 1px inset }
+
+!* Table elements *!
+
+table { font-family: sans-serif; font-size: 0.85em; line-height: 1em; border: solid thin #ccc; border-collapse: collapse; }
+caption { }
+tr { }
+td { text-align: left ; padding: 3px; border: solid thin #ccc; }
+th { font-weight: bolder; text-align: center ; padding: 3px; border: solid thin #ccc; }
+col { }
+colgroup { }
+thead { text-align: center }
+tfoot { text-align: center }
+tbody { text-align: left }
+
+!* Forms elements *!
+
+form { margin: .85em 0 }
+fieldset { margin: .85em 0 }
+input { }
+select { }
+textarea { }
+label { }
+button { }
+legend { }
+option { }
+optgroup { }
+
+!* Inline structural elements *!
+
+br { }
+span { }
+
+!* Inline phrasal elements *!
+
+em { font-style: italic }
+strong { font-weight: bolder }
+dfn { }
+code { font-family: monospace }
+samp { font-family: monospace }
+kbd { font-family: monospace }
+var { font-style: italic }
+cite { font-style: italic }
+abbr { font-variant: small-caps; letter-spacing: 0.1em }
+acronym { font-variant: small-caps; letter-spacing: 0.1em }
+q { }
+q:before { content: open-quote; }
+q:after { content: close-quote; }
+[lang|=nl] > *, [lang|=en] > *, [lang|=it] > *, [lang|=pt] > *, [lang|=es] > *, [lang|=tr] > * { quotes: "\201C" "\201D" "\2018" "\2019" "\201C" "\201D" "\2018" "\2019" "\201C" "\201D" "\2018" "\2019" }
+[lang|=cs] > *, [lang|=de] > *, [lang|=sk] > * { quotes: "\201E" "\201C" "\201A" "\2018" "\201E" "\201C" "\201A" "\2018" "\201E" "\201C" "\201A" "\2018" }
+[lang|=da] > *, [lang|=fi] > *, [lang|=no] > *, [lang|=sv] > * { quotes: "\201D" "\201D" "\2019" "\2019" "\201D" "\201D" "\2019" "\2019" "\201D" "\201D" "\2019" "\2019" }
+[lang|=hu] > *, [lang|=pl] > * { quotes: "\201E" "\201D" }
+[lang|=el] > *, [lang|=ru] > * { quotes: "\00AB" "\00BB" "\2039" "\203A" "\00AB" "\00BB" "\2039" "\203A" "\00AB" "\00BB" "\2039" "\203A" }
+[lang|=sl] > * { quotes: "\00BB" "\00AB" "\203A" "\2039" "\00BB" "\00AB" "\203A" "\2039" "\00BB" "\00AB" "\203A" "\2039" }
+[lang|=fr] > * { quotes: "\00AB\00A0" "\00A0\00BB" "\2039\00A0" "\00A0\203A" "\00AB\00A0" "\00A0\00BB" "\2039\00A0" "\00A0\203A" "\00AB\00A0" "\00A0\00BB" "\2039\00A0" "\00A0\203A" }
+
+!* Presentational elements *!
+
+sub { font-size: .83em; vertical-align: sub }
+sup { font-size: .83em; vertical-align: super }
+!* USE OF THIS ELEMENT DISCOURAGED IN HTML.  Use phrasal elements, or class styles. *! tt { font-family: monospace }
+!* USE OF THIS ELEMENT DISCOURAGED IN HTML.  Use phrasal elements, or class styles. *! i { font-style: italic }
+!* USE OF THIS ELEMENT DISCOURAGED IN HTML.  Use phrasal elements, or class styles. *! b { font-weight: bolder }
+!* USE OF THIS ELEMENT DISCOURAGED IN HTML.  Use phrasal elements, or class styles. *! big { font-size: 1.17em }
+!* USE OF THIS ELEMENT DISCOURAGED IN HTML.  Use phrasal elements, or class styles. *! small { font-size: .83em }
+
+!* Hypertext elements *!
+
+a { }
+a[href] { text-decoration: underline }
+a:link { color: blue }
+a:visited { color: red }
+a:active { color: lime }
+a:link img { border: 2px solid blue; margin: 0; padding: 0 }
+a:visited img { border: 2px solid red; margin: 0; padding: 0 }
+a:active img { border: 2px solid lime; margin: 0; padding: 0 }
+
+!* Object elements *!
+
+img { margin: 0; border-style: none; padding: 0 }
+object { margin: 0; border-style: none; padding: 0 }
+
+!* Edit elements *!
+
+del { color: #888; text-decoration: line-through }
+ins { color: #049; background-color: #EE0; text-decoration: none }
+
+!* For printing *!
+
+@media print {
+    #content a:link:after, #content a:visited:after, #content a:active:after { content: " <" attr(href) "> "; font-size: 90%; }
+}
+@page { margin: 10%; }
+
+
+!*
+ * ID selector based rule sets, for the standard IDs defined in
+ * an early draft HTML5.
+ *!
+
+#siteHeader {
+    height: auto;
+    margin: 0 0 2em 0;
+    border: none;
+    padding: 0.5em;
+    background: rgba(85,85,85,0.36);
+}
+
+#siteSearchForm { }
+
+#siteNav {
+    position: fixed;
+    left: 0;
+    top: 10em;
+    width: 15%;
+    border: 1px solid gray;
+    padding: 0.3em;
+}
+
+#siteNav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#siteNav li {
+    display: block;
+    margin: 0;
+    list-style-type: none;
+}
+
+#content {
+    margin-left: 20%;
+}
+
+#siteFooter {
+    margin: 2em 0 0 0;
+    border: none;
+    padding: 0.5em;
+    background: rgba(85,85,85,0.36);
+}
+
+#siteFooter ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#siteFooter li {
+    display: inline-block;
+    margin: 0;
+    list-style-type: none;
+}
+
+#siteFooter li:before {
+    content: " ｜ ";
+}
+
+#siteFooter li:first-child:before {
+    content: normal;
+}
+
+
+!*
+ * Class selector based rule sets, for the standard classes defined in
+ * an early draft HTML5.
+ *!
+
+.copyright { }
+
+.error { }
+
+.example { }
+
+.issue { }
+
+.note { }
+
+.search { }
+
+.warning { font-variant: small-caps; font-family: sans-serif; line-height: 1.05em; color:red; font-weight: bolder; }
+
+.breadcrumbs {
+}
+
+.breadcrumbs ul {
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+    margin: 0;
+    list-style-type: none;
+}
+
+.breadcrumbs li:before {
+    content: " ➟ ";
+}
+
+.breadcrumbs li:first-child:before {
+    content: normal;
+}
+
+
+.tabpanel { }
+
+.tab { }
+
+.tabcontent { }
+
+
+!*
+ * Class selector based rule sets, for the standard classes defined in
+ * IEEE Std 2001-2002, "IEEE Recommended Practice for the Internet--
+ * Web Site Engineering, Web Site Management, and Web Site Life Cycle".
+ *!
+
+!* Apply this class to an element enclosing: the organizational security characteristic of the page content ("security banner"). *!
+.securitydesignation { font-variant: small-caps; font-family: sans-serif; line-height: 1.05em; color:red; font-weight: bolder; text-align: center }
+
+!* Apply this class to an element enclosing: date of last modification of the page (Format as YYYY-MM-DD) *!
+.datemodified { }
+
+!* Apply this class to an element enclosing: the most recent date when a change considered being of value to the target-user communities has occurred. (Format as YYYY-MM-DD) *!
+.pagedate { }
+
+!* Apply this class to an element enclosing: the content was current as of this date. (Format as YYYY-MM-DD) *!
+.contentdate { }
+
+!* Apply this class to an element enclosing: date when a review is scheduled. (Format as YYYY-MM-DD) *!
+.nextupdate { }
+
+!* Apply this class to an element enclosing: the earliest date that the information on the page may be deleted.  (Format as YYYY-MM-DD or "archival") *!
+.expirationdate { }
+
+!* Apply this class to an element enclosing: date when a page has been archived and is no longer considered active.  (Format as YYYY-MM-DD) *!
+.dateretired { }
+
+!* Apply this class to any element enclosing telephone numbers. (Format like +1 972 605 6000) *!
+.phone { }
+
+!* Apply this class to an element enclosing: size information of large liked objects.  (Format like 3.4 MB, use 1000 bytes for a kB, not 1024) *!
+.objectsize { }
+
+!*
+ * Add application-specific classes here.
+ *!
+
+!* Note: ID selectors have an important restriction.  An identifier can only
+   be used ONCE on a page -- every identifier value MUST be unique. *!
+
+.disclaimer { font-variant: small-caps; font-family: sans-serif; line-height: 1.05em; color:red; font-weight: bolder; text-align: center }
+
+.wireframeNote {
+    border: 0.1em solid #ffc800;
+    padding: 0.2em;
+    background: #fff6d7;
+}
+
+
+#siteHeader {
+    padding-right: 16em;
+}
+
+
+form p {
+    display: block;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+!*
+input:invalid {
+	border: 2px dotted red;
+	color: red;
+}
+input:valid {
+	border: 2px solid green;
+	color: green;
+}
+*!*/

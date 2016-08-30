@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>Longhorn Auctions: Updating Listing</title>
+    <meta charset="utf-8"/>
+    <link href="page-template-stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header>
+    <h1>Updating Listing</h1>
+    <h5><a href = "menu.xhtml">Main Menu</a> > <a href = "userListings.xhtml">Manage Your Listings</a> > Updating Listing</h5>
+</header>
+<main>
+    <p>Please fill out the information below and click the update listing button when you have finished filling out the form.</p>
+    <form id="listingForm">
+        <label>Name of Item: <input type = "text"/></label><br/>
+        <label>Category: <input type = "text"/></label><br/>
+        <label>Condition: <input type = "text"/></label><br/>
+        <label>Reserve Price: $<input type = "number"/></label><br/>
+        <label>Bid Deadline Time and Date: <input type = "datetime-local"/></label>
+        <br/><label>Item Description: <br/><textarea maxlength="500"/></label><br/>
+        <label>Picture: <br/><input type = "file"/></label><br/>
+    </form>
+    <br/><a href="updatesuccess.xhtml"><button>Update Listing</button></a><a href="userListings.xhtml"><button>Cancel Update</button></a>
+</main>
+<footer id="siteFooter">
+    Longhorn Auctions, Company mottos are for suckers!
+    <ul>
+        <li><a href="menu.xhtml">Return to Main Menu</a></li>
+        <li><a href="logoffpage.xhtml">Log-off</a></li>
+    </ul>
+    <ul id="siteFooter ul">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Terms of use</a></li>
+        <li><a href="#">Privacy notice</a></li>
+    </ul>
+    <div class="copyright">© 2016 Dylan Droll. All rights reserved.</div>
+    <div class="disclaimer">NOTICE: This is a class exercise, not a live site.  Do not attempt to use this site for actual commerce.</div>
+</footer>
+</body>
+</html>
